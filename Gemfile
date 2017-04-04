@@ -60,3 +60,6 @@ gem 'kaminari'
 
 # simple_form gem
 gem 'simple_form'
+
+# font-awesome gem
+gem "font-awesome-rails"

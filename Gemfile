@@ -57,3 +57,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 # will_paginate gem
 gem 'will_paginate'
 gem 'kaminari'
+
+# simple_form gem
+gem 'simple_form'

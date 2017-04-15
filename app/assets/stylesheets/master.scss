@@ -80,7 +80,8 @@ body {
   * html .digg_pagination {
     height: 1%; }
   *:first-child + html .digg_pagination {
-    overflow: hidden; }
+    overflow: hidden; 
+}
 
 .apple_pagination {
   background: #f1f1f1;
@@ -108,7 +109,8 @@ body {
     text-decoration: none;
     color: black; }
     .apple_pagination a:hover, .apple_pagination a:focus {
-      text-decoration: underline; }
+      text-decoration: underline; 
+}
 
 .flickr_pagination {
   text-align: center;
@@ -138,7 +140,8 @@ body {
   .flickr_pagination .previous_page {
     margin-right: 1em; }
   .flickr_pagination .next_page {
-    margin-left: 1em; }
+    margin-left: 1em; 
+}
     
 .help-block {
   color: #ff3333;
@@ -153,4 +156,25 @@ body {
 
 .class {
   clear: both;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }

@@ -89,3 +89,9 @@
     </div>
   <% end %>
 </div>
+
+<div class= "clear"></div>
+<%= simple_form_for @photo, url: "#" do |f| %>
+  <%= f.input :photo %>
+  <%= f.submit "Add a comment", class: 'btn btn-primary' %>
+<% end %>

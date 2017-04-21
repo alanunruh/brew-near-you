@@ -31,6 +31,14 @@
 
 <br/>
 
+  <h1>Photos</h1>
+  <% @place.photos.each do |photo| %>
+      <%= image_tag photo.picture %>
+      <%= photo.caption %>
+  <% end %>
+
+<br/>
+
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
@@ -95,11 +103,4 @@
   <%= f.input :caption %>
   <%= f.input :picture %>
   <%= f.submit "Add a comment", class: 'btn btn-primary' %>
-<% end %>
-
-<h1>Photos</h1>
-
-<% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
 <% end %>

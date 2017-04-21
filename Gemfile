@@ -75,3 +75,6 @@ gem "figaro"
 
 # carrierwave gem
 gem "carrierwave", "~> 1.0"
+
+# fog gem
+gem "fog"

@@ -18,7 +18,15 @@
           <small><%= place.comments.last.user.email %></small>
         </blockquote>
       </div>
-    <% end %>  
+    <% end %>
+     
+    <% if place.photos.present? %> 
+      <div class="col-12">
+          <%= image_tag place.photos.last.picture %>
+          <%= place.photos.last.caption %> 
+      </div>
+    <% end %>
+   
   </div>
 <% end %>
 

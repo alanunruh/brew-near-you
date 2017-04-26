@@ -14,8 +14,10 @@
   <div class="clear"></div>
 </div>
 <br/><br/>
+
 <h1 class="text-center">My Comments</h1>
 <br/><br/>
+
 <div class="row">
   <% @user.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
@@ -25,16 +27,20 @@
           <b><%= comment.humanized_rating %></b> -
         <% end %>  
         <%= comment.message %>
+        <br/>
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
   <% end %>
 </div>
-
 <div class="clear"></div>
 <br/><br/>
+
+
 <h2 class="text-center">My Places</h2>
 <br/><br/>
+
+<div class="row">
   <%= @user.places.each do |place| %>
     <div class="booyah-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1>
@@ -52,10 +58,11 @@
             <b><%= place.comments.last.humanized_rating %></b> -
           <% end %>  
           <%= place.comments.last.message %>
+          <br/>
           <small><%= place.comments.last.user.email %></small>
         </blockquote>
       </div>
     <% end %>
-  </div>
-<% end %>
-
+    </div>
+  <% end %>
+</div>

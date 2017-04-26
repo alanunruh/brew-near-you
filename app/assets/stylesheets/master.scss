@@ -30,10 +30,12 @@ body {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #5aebad;
+  color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
   font-size: 26px;
   margin-bottom: 0;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
 }
 
 .digg_pagination {
@@ -184,7 +186,7 @@ blockquote p {
 .img {
   display: block;
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
@@ -195,6 +197,7 @@ blockquote p {
 .carousel-caption {
   font-family: 'Ubuntu', sans-serif;
   font-size: 60px;
+  color: #ffffff;
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
   background-color: rgba(0, 0, 0, 0.5);

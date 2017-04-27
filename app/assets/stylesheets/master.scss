@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -20,18 +20,18 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: image_url('pixel_weave.png');
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
   background: image_url('tweed.png');
   box-shadow: 0px 1px 3px #2a2a2a;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-inverse .navbar-brand {
   color: #ffffff;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   margin-bottom: 0;
   font-weight: 100;
@@ -195,7 +195,7 @@ blockquote p {
 }
 
 .carousel-caption {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   color: #ffffff;
   font-weight: 100;

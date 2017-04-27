@@ -4,11 +4,11 @@ class Comment < ApplicationRecord
   after_create :send_comment_email
   
   RATINGS = {
-    'One Star': '1_star',
-    'Two Stars': '2_stars',
-    'Three Stars': '3_stars',
-    'Four Stars': '4_stars',
-    'Five Stars': '5_stars'
+    '★': '1_star',
+    '★★': '2_stars',
+    '★★★': '3_stars',
+    '★★★★': '4_stars',
+    '★★★★★': '5_stars'
   }
   
   def humanized_rating

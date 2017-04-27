@@ -46,7 +46,7 @@
   <h2 class="float-left">Photos</h2>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#photoModal">
-    Add a photo
+    Add A Photo
   </button>
   
   <br class="clear"></br>
@@ -59,7 +59,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
           </button>
-          <h4 class="modal-title" id="myModalLabel">Add a photo</h5>
+          <h4 class="modal-title" id="myModalLabel">Add A Photo</h5>
         </div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <div class="modal-body">
@@ -67,7 +67,6 @@
             <%= f.input :picture %>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <%= f.submit "Add a photo", class: 'btn btn-primary' %>
           </div>  
         <% end %>
@@ -89,7 +88,7 @@
   <h2 class="float-left">Comments</h2>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
-    Add a comment
+    Add A Comment
   </button>
   
   <br class="clear"></br>
@@ -102,7 +101,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">x</span>
           </button>
-          <h4 class="modal-title" id="myModalLabel">Add a comment</h5>
+          <h4 class="modal-title" id="myModalLabel">Add A Comment</h5>
         </div>
         <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
           <div class="modal-body">
@@ -110,7 +109,6 @@
             <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <%= f.submit "Add a comment", class: 'btn btn-primary' %>
           </div>  
         <% end %>

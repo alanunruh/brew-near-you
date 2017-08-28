@@ -1,24 +1,21 @@
-# README
+# Brew Near You
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Brew Near You is an MVC app that clones Yelp. You can add, review, upload photos and comment on your favorite brew joint.
 
-Things you may want to cover:
+*Technical description: A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.*
 
-* Ruby version
+## Features
 
-* System dependencies
+* Amazon Web Services (S3) for photo storage.
 
-* Configuration
+* Twitter Bootstrap for CSS and components.
 
-* Database creation
+* PostgreSQL for database queries involving users, photos, comments, and ratings.
 
-* Database initialization
+* Devise for user forms and security.
 
-* How to run the test suite
+* Google Maps API for displaying locations.
 
-* Services (job queues, cache servers, search engines, etc.)
+## View It Live
 
-* Deployment instructions
-
-* ...
+https://brew-near-you-alan-unruh.herokuapp.com/
